@@ -1,0 +1,16 @@
+.blog-wrapper {
+    max-width: 1484px;
+    margin: 0 auto;
+
+    background-color: #eee;
+}
+
+.title-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__title {
+    margin: 0;
+}

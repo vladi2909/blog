@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,14 +18,21 @@
                 <h1 class="blog__title">Блог</h1>
 
                 <div class="search">
-                    <div class="blog__search" style="display: none;">
-                        <form action="#">
-                            <input type="text">
+                    <div class="blog__search">
+                        <form role="form" class="search-form-2">
+                            <div id="container">
+                                <div class="search-toggle" style="display:none">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Что будем искать?" size="25" />
+                                </div>
+                            </div>
+                            
                         </form>
+                        <div class="search__icon--open">
+                            <img class="icon-open" src="./img/seachopen.png" alt="search">
+                            <img class="icon-close" src="./img/searchclose.png" style="display: none;">
+                        </div>
                     </div>
-                    <div class="search__icon--open">
-                        <img src="./img/Vector.png" alt="search">
-                    </div>
+                    
                 </div>
 
             </div>
@@ -33,6 +43,11 @@
         </div>
     </div>
     
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>

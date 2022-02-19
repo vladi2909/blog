@@ -1,4 +1,4 @@
-$(".search__icon--open").click(function () {
+$(".search__icon").click(function () {
     $(".search-toggle").animate({
         width: 'toggle'
     });

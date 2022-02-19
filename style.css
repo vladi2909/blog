@@ -1,3 +1,8 @@
+body {
+    background-color: #C7C7C7;
+    background-color: #eee;
+}
+
 .blog {
     font-family: 'Montserrat', sans-serif;
 }
@@ -5,10 +10,11 @@
 .blog-wrapper {
     max-width: 1484px;
     margin: 0 auto;
-    /* background-color: #eee; */
+    background-color: #fff;
 }
 
 .title-search {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,15 +28,19 @@
 }
 
 .search {
+    position: absolute;
+    width: 100%;
     align-items: flex-end;
 }
 
 .blog__search {
+    position: relative;
     display: flex;
     align-items: center;
 }
 
 .search-form-2 {
+    position: absolute;
     width: 100%;
 }
 
@@ -57,7 +67,8 @@ input.search-form {
 }
 
 #container {
-    width: 1300px;
+    max-width: 1484px;
+    width: 100%;
 }
 
 .search-toggle {
@@ -81,6 +92,9 @@ input.search-form {
     font-size: 16px;
 }
 
-.search__icon--open {
+.search__icon {
+    position: absolute;
+    right: 0;
     cursor: pointer;
+    background-color: #fff;
 }

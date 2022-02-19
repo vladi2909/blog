@@ -98,3 +98,37 @@ input.search-form {
     cursor: pointer;
     background-color: #fff;
 }
+
+
+.blog-content {
+    margin-top: 42px;
+}
+
+.navigation {}
+
+.navigation__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation__item {
+    margin-right: 50px;
+}
+
+.navigation__item--active {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #00B8FF;
+}
+
+.navigation__item--active > .navigation__link {
+    color: #00B8FF;
+}
+
+.navigation__link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2D3448;
+    text-decoration: none;
+}

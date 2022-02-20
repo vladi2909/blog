@@ -141,6 +141,7 @@ input.search-form {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .content {
@@ -226,7 +227,6 @@ input.search-form {
 
 
 .solution {
-    height: 200px;
     width: 34.3%;
 }
 
@@ -269,4 +269,15 @@ input.search-form {
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
+}
+
+.mailling {
+    display: flex;
+    justify-content: center;
+    background-color: #EEF7FF;
+}
+
+.mailling-wrap {
+    max-width: 825px;
+    background-color: #FFF;
 }

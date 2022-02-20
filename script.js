@@ -18,7 +18,6 @@ $(document).ready(function() {
 
         $(target.parentElement).addClass("navigation__item--active");
 
-        
     });
     
 

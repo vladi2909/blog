@@ -1,6 +1,6 @@
 body {
-    background-color: #C7C7C7;
-    background-color: #eee;
+    /* background-color: #C7C7C7;
+    background-color: #eee; */
 }
 
 .blog {
@@ -10,7 +10,7 @@ body {
 .blog-wrapper {
     max-width: 1484px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #F9F9F9;
 }
 
 .title-search {
@@ -62,6 +62,7 @@ input.search-form {
     padding-left: 0;
     font-size: 16px;
     border: none;
+    background-color: #F9F9F9;
     border-bottom: 3px solid #EFEFEF;
     outline: none;
 }
@@ -96,7 +97,7 @@ input.search-form {
     position: absolute;
     right: 0;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #F9F9F9;
 }
 
 
@@ -131,4 +132,108 @@ input.search-form {
     font-weight: 600;
     color: #2D3448;
     text-decoration: none;
+    transition: color .1s ease-in-out;
 }
+
+.navigation__link:hover {
+    color: #00B8FF;
+}
+
+.content-wrap {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 65.7%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content__item {
+    width: calc(1/2*100% - (1 - 1/2)*30px);
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color .1s ease-in-out;
+}
+
+.content__item:hover {
+    background-color: #FFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.content__bg {
+    height: 234px;
+    overflow: hidden;
+    background-color: blueviolet;
+    border-radius: 4px;
+}
+
+.content__img {
+    width: 100%;
+}
+
+.content__block {
+    padding: 25px 18px 40px;
+}
+
+.content__decision {
+    display: flex;
+    justify-content: space-between;
+}
+
+.decision__tite {
+    font-weight: 500;
+    color: #00AEEF;
+}
+
+.decision__date {
+    font-size: 16px;
+    font-weight: 500;
+    color: #C7C7C7;
+}
+
+.content__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #2D3448;
+}
+
+.content_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6B6B6B;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content__subtitle {
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2D3448;
+    background: rgba(196, 196, 196, 0.11);
+}
+
+
+.solution {
+    height: 200px;
+    width: 34.3%;
+}
+
+/* .solution div {
+    background-color: aqua;
+    margin-left: 30px;
+    height: 200px;
+} */

@@ -272,12 +272,118 @@ input.search-form {
 }
 
 .mailling {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     background-color: #EEF7FF;
 }
 
 .mailling-wrap {
-    max-width: 825px;
+    min-width: 825px;
+    margin-top: 68px;
+    margin-bottom: 68px;
     background-color: #FFF;
+}
+
+.bg-logo-wrapper {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-logo-wrapper2 {
+    width: 101px;
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F7FA;
+    border-radius: 50%;
+}
+
+.bg-logo-wrapper3 {
+    width: 79px;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.mailling__title {
+    margin: 21px 0 13px;
+    text-align: center;
+    font-weight: 800;
+    color: #2D3448;
+}
+
+.mailling__title2 {
+    margin-left: 8px;
+    text-transform: capitalize;
+    color: #00B8FF;
+}
+
+.mailling__content {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.mailling__p {
+    margin: 3px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #6B6B6B;
+}
+
+.mailling__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailling__input {
+    min-width: 364px;
+    padding: 16px 20px;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+    outline: none;
+}
+
+.mailling__input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #C7C7C7;
+}
+
+.mailling__input:-moz-placeholder {
+    font-size: 16px;
+    color: #C7C7C7;
+}
+
+.mailling__label {
+    max-width: 352px;
+    margin-top: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 15px;
+    color: #C7C7C7;
+}
+
+.mailling__sbmt {
+    margin-top: 28px;
+    margin-bottom: 36px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+    background-color: #00B8FF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.mailling__sbmt-icon {
+    margin-left: 10px;
 }

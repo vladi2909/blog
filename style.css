@@ -168,7 +168,7 @@ input.search-form {
 .content__bg {
     height: 234px;
     overflow: hidden;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border-radius: 4px;
 }
 
@@ -279,7 +279,8 @@ input.search-form {
 }
 
 .mailling-wrap {
-    min-width: 825px;
+    max-width: 825px;
+    width: 100%;
     margin-top: 68px;
     margin-bottom: 68px;
     background-color: #FFF;
@@ -343,7 +344,9 @@ input.search-form {
 }
 
 .mailling__input {
-    min-width: 364px;
+    /* min-width: 364px; */
+    max-width: 364px;
+    width: 100%;
     padding: 16px 20px;
     border: 1px solid #C7C7C7;
     border-radius: 4px;
@@ -425,4 +428,90 @@ input.search-form {
     margin-top: 36px;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+}
+
+
+@media (max-width: 1024px) {
+    .blog-wrapper {
+        margin: 0 25px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content__item {
+        width: calc(1/2*100% - (1 - 1/2)*20px);
+        margin-bottom: 20px;
+    }
+
+    .solution {
+        display: none;
+    }
+
+    .mailling-wrap {
+        max-width: 764px;
+        width: 100%;
+        margin-top: 47px;
+        margin-bottom: 47px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-wrapper {
+        margin: 0 20px;
+    }
+
+    .content__item {
+        width: calc(1/2*100% - (1 - 1/2)*18px);
+        margin-bottom: 18px;
+    }
+
+    .content__item:hover {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .content__bg {
+        max-height: 175.5px;
+    }
+
+    .content__block {
+        padding: 18px 0;
+    }
+
+    .decision__date {
+        font-size: 14px;
+    }
+
+    .content_paragraph {
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .content__subtitle {
+        font-size: 14px;
+    }
+
+    .mailling-wrap {
+        margin-bottom: 42px;
+    }
+}
+
+@media (max-width: 530px) {
+    .blog-wrapper {
+        margin: 0 15px;
+    }
+
+    .content__item {
+        width: 100%;
+    }
+
+    .decision__date {
+        display: none;
+    }
 }

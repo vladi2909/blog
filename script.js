@@ -19,6 +19,21 @@ $(document).ready(function() {
         $(target.parentElement).addClass("navigation__item--active");
 
     });
+
+    const accordion = document.querySelector(".accordion");
+    let flag = true;
     
+    accordion.addEventListener("click", function() {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (flag) {
+            panel.style.maxHeight = 0;
+            flag = false;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            flag = true;
+        }
+    });
+
 
 });

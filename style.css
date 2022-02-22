@@ -585,4 +585,17 @@ input.search-form {
     .decision__date {
         display: none;
     }
+
+    .mailling-wrap {
+        margin-top: 71px;
+        margin-bottom: 56px;
+    }
+
+    .mailling__input {
+        max-width: 248px;
+    }
+
+    .mailling__sbmt {
+        margin-bottom: 92px;
+    }
 }

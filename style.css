@@ -540,6 +540,14 @@ input.search-form {
     display: flex;
 }
 
+.detail__date {
+
+}
+
+.detail__reading-time {
+    
+}
+
 @media (max-width: 1024px) {
     .blog-wrapper {
         margin: 0 25px;

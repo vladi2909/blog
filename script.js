@@ -35,5 +35,38 @@ $(document).ready(function() {
         }
     });
 
+    let links = {
+        all: 'Все',
+        upgrade: 'Обновления решений',
+        bitrix24: 'Битрикс24',
+        news: 'Новости'
+    };
+
+    var DEFAULT_LINK = 'all';
+
+    let menuElem = document.querySelector(".navigation");
+    let titleElem = menuElem.querySelector(".navigation__title");
+
+    function selectOption(optionName) {
+        titleElem.dataset.link = optionName;
+        titleElem.innerText = links[optionName];
+    }
+
+    selectOption(DEFAULT_LINK);
+    
+    let optionsHolter = menuElem.querySelector(".navigation__list");
+
+    titleElem.addEventListener("click", function() {
+        menuElem.classList.toggle("open");
+    });
+
+    optionsHolter.addEventListener("click", function(event) {
+        menuElem.classList.remove('open');
+        if (event.target.dataset && event.target.dataset.link) {
+            selectOption(event.target.dataset.link);
+        }
+    });
+    
+
 
 });

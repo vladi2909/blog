@@ -577,6 +577,63 @@ input.search-form {
     display: inline-block;
 }
 
+.border {
+    margin-top: 60px;
+    border: 3px solid #F4F4F4;
+}
+
+.detail-solial {
+    margin-top: 36px;
+    display: flex;
+}
+
+.detail-solial__bg {
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.detail-solial__bg--vk {
+    background-color: #7294C7;
+}
+
+.detail-solial__bg--insta {
+    background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+}
+
+.detail-solial__bg--face {
+    background-color: #4E6297;
+}
+
+.detail-solial__bg--teleg {
+    background-color: #2F89CE;
+}
+
+.detail-solial__bg--youtube {
+    background-color: #F40000;
+}
+
+.detail-solial__bg--in {
+    background-color: #0A66C2;
+}
+
+.news {
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+.news__title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #2D3448;
+}
+
+
+
 @media (max-width: 1024px) {
     .blog-wrapper {
         margin: 0 25px;

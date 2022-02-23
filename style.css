@@ -296,6 +296,7 @@ input.search-form {
     text-overflow: ellipsis;
     color: #2D3448;
     background: rgba(196, 196, 196, 0.11);
+    border-radius: 4px;
 }
 
 
@@ -536,16 +537,44 @@ input.search-form {
     margin-left: 31px;
 }
 
+.detail__name-author {
+    margin: 0;
+    font-weight: 600;
+}
+
 .author__date-wrap {
     display: flex;
+    margin-top: 7px;
 }
 
 .detail__date {
-
+    margin: 0;
+    margin-right: 24px;
 }
 
 .detail__reading-time {
-    
+    margin: 0;
+}
+
+.detail__reading-time::before {
+    content: url("./img/ellipse.svg");
+    margin-right: 4px;
+}
+
+.detail__img-wrap {
+    margin-top: 40px;
+}
+
+.detail__img {
+    width: 100%;
+}
+
+.content__subtitle-wrap {
+    margin-top: 11px;
+}
+
+.content__subtitle--sub {
+    display: inline-block;
 }
 
 @media (max-width: 1024px) {

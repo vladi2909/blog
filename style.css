@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: #F9F9F9;
 }
 
@@ -622,7 +623,8 @@ input.search-form {
 }
 
 .news {
-    max-width: 1480px;
+    /* max-width: 1480px; */
+    max-width: 1512px;
     margin: 0 auto;
     margin-top: 80px;
     font-family: 'Montserrat', sans-serif;
@@ -634,13 +636,14 @@ input.search-form {
 }
 
 .news__title {
+    padding: 0 16px;
     font-weight: 600;
     font-size: 40px;
     color: #2D3448;
 }
 
 .news-wrap {
-    margin: 47px -16px 0;
+    margin: 47px 0;
 }
 
 .owl-item::after,
@@ -685,13 +688,15 @@ input.search-form {
     margin: 0;
     font-size: 30px;
     font-weight: 600;
+    line-height: 32px;
 }
 
 .consultation__subtitle {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 34px;
     font-size: 16px;
     font-weight: 500;
+    line-height: 19.5px;
     color: #6B6B6B;
 }
 
@@ -732,10 +737,13 @@ input.search-form {
 .consultation__textarea {
     width: 50%;
     margin: 0 -16px;
+    display: flex;
+    margin-bottom: 18px;
 }
 
 .consultation__textarea textarea {
     width: 100%;
+    box-sizing: border-box;
     padding: 16px;
     outline: none;
     border: 1px solid #C7C7C7;
@@ -751,7 +759,7 @@ input.search-form {
 }
 
 .consultation__footer {
-    margin-top: 35px;
+    margin-top: 20px;
     display: flex;
     align-items: flex-start;
 }
@@ -941,5 +949,67 @@ input.search-form {
 
 /* media-detail */
 @media (max-width: 1440px) {
-    
+    .news .content__block {
+        padding: 25px 0px 40px;
+    }
+
+    .news .content__bg {
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .news .content__item {
+        width: auto;
+    }
+
+    .consultation-wrap {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultation__fiels-wrap {
+        flex-direction: column;
+    }
+
+    .consultation__input-wrap {
+        width: auto;
+    }
+
+    .consultation__textarea {
+        width: auto;
+    }
+
+    .consultation__footer {
+        margin-top: 14px;
+        flex-direction: column;
+    }
+
+    .consultation-wrap {
+        margin-bottom: 30px;
+    }
+
+    .consultation__textarea textarea {
+        min-height: 120px;
+    }
+
+    .consultation__p {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .consultation-wrap {
+        margin-top: 16px;
+    }
+
+    .consultation__title {
+        font-size: 20px;
+    }
+
+    .consultation__subtitle {
+        margin-top: 15px;
+    }
 }

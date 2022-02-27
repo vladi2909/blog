@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -68,7 +70,35 @@
 
     <div class="news">
         <h2 class="news__title">Последние новости</h2>
-        <div class="content-wrap">
+        <div class="news-wrap owl-carousel">
+            <a class="content__item content__item--detail" href="./subindex.html">
+                <div class="author_block">
+                    <div class="author-wrap">
+                        <div class="photo_author">
+                            <img src="./img/author.jpg" alt="author">
+                        </div>
+                        <p class="name-author">Александр Дудаков</p>
+                    </div>
+                    <p class="reading-time">Время чтения: <span>4 мин</span></p>
+                </div>
+                <div class="content__bg">
+                    <div class="obfuscation"></div>
+                    <img src="./img/b2b.png" alt="">
+                </div>
+                <div class="content__block">
+                    <div class="content__decision decision">
+                        <span class="decision__tite">Объявления решений</span>
+                        <span class="decision__date">20 января 2020</span>
+                    </div>
+                    <div class="content__text">
+                        <h2 class="content__title">Создать B2B платформу с нуля или</h2>
+                        <p class="content_paragraph">Пункты меню и прочие ссылки из шапки брать с текущего основного сайта. По футеру аналогично</p>
+                        <div class="content__subtitle">
+                            Сотбит: Микроразметка Schemaсковыхааппаг пекпек пкпкеп
+                        </div>
+                    </div>
+                </div>
+            </a>
             <a class="content__item content__item--detail" href="./subindex.html">
                 <div class="author_block">
                     <div class="author-wrap">
@@ -190,5 +220,17 @@
             </form>
         </div>
     </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
 </body>
 </html>

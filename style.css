@@ -640,8 +640,12 @@ input.search-form {
 }
 
 .news-wrap {
-    /* margin-top: 47px; */
     margin: 47px -16px 0;
+}
+
+.owl-item::after,
+.owl-dot::after {
+    display: none;
 }
 
 .return-btn-wrap {

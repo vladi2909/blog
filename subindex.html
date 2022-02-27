@@ -70,7 +70,7 @@
 
     <div class="news">
         <h2 class="news__title">Последние новости</h2>
-        <div class="news-wrap owl-carousel">
+        <div class="news-wrap owl-carousel owl-theme">
             <a class="content__item content__item--detail" href="./subindex.html">
                 <div class="author_block">
                     <div class="author-wrap">
@@ -229,7 +229,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
+            $(".owl-carousel").owlCarousel({
+                dots: false,
+                pagination : true
+            });
         });
     </script>
 </body>

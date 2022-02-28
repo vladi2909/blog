@@ -832,6 +832,12 @@ input.search-form {
         padding: 18px 0;
     }
 
+    .obfuscation,
+    .reading-time,
+    .author-wrap {
+        display: none;
+    }
+
     .decision__date {
         font-size: 14px;
     }
@@ -989,6 +995,14 @@ input.search-form {
     .detail-solial {
         margin-left: 16px;
     }
+
+    .owl-theme .owl-dots .owl-dot.active span {
+        background-color: #00AEEF;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #D1EEFC;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1039,14 +1053,6 @@ input.search-form {
 
     .news .content__bg {
         max-height: inherit;
-    }
-
-    .owl-theme .owl-dots .owl-dot.active span {
-        background-color: #00AEEF;
-    }
-
-    .owl-theme .owl-dots .owl-dot span {
-        background-color: #D1EEFC;
     }
 }
 

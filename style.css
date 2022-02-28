@@ -701,10 +701,6 @@ input.search-form {
     color: #6B6B6B;
 }
 
-.consultation-form {
-
-}
-
 .consultation__fiels-wrap {
     margin: 0 15px;
     display: flex;
@@ -908,6 +904,7 @@ input.search-form {
         border-top: none;
         border-radius: 0 0 4px 4px;
         background-color: #F9F9F9;
+        z-index: 10;
     }
 
     .navigation__link {
@@ -919,6 +916,15 @@ input.search-form {
     .navigation__item {
         margin-right: 0;
     }
+
+    .obfuscation {
+        display: none;
+    }
+
+    .author-wrap,
+    .reading-time {
+        display: none;
+    } 
 }
 
 @media (max-width: 530px) {
